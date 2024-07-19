@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    background-color:aquamarine ;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenu{
+    background-color: beige;
+    width: 50%;
+    padding: 20px; 
+        
+}
+
+p{
+    font-size: medium;
+    margin-bottom: 20px;
+}
+h1{
+    margin-bottom: 15px;
+}
+h2{
+    margin-bottom: 20px;
+}
+button{
+
+    padding: 20px;
+}

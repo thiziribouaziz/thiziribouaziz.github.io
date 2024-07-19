@@ -1,0 +1,74 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container{
+         width: 100vw;
+         height: 100vh;
+         background-color: beige;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.parent{
+        width: 150px;
+        height: 150px;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+}
+
+.enfant1{
+        width: 100px;
+        height: 10px;
+        background-color: red;
+    
+        
+}
+
+.enfant2{
+    width: 100px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+   
+}
+
+.enfant3{
+    width: 100px;
+    height: 10px;
+    background-color: red;
+   
+      
+}
+
+ .parent:hover .enfant1 {
+    transform: rotate(135deg);
+    position: absolute;
+     top:50% 
+ }
+
+ .parent:hover .enfant3 {
+     transform: rotate(-135deg);
+     position: absolute;
+     top:50%    
+ }
+
+ .parent:hover .enfant2 {
+         animation: jeu 1s forwards;    
+ }
+  
+ @keyframes jeu {
+   0% {transform: translate(-100px) ;}
+   100% {
+    transform: translate(-150px);
+    opacity: 0;
+  }
+}

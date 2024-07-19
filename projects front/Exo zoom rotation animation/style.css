@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carre{
+    width: 200px;
+    height: 200px;
+    animation: jeu 3s infinite;
+}
+@keyframes jeu {
+    0% {background-color: indigo; }
+    50% {background-color: darkblue;
+        transform:scale(1.5) rotate(360deg);
+     }  
+    100% {background-color: darkred; }
+}
+
+.carre1{
+    width: 30px;
+    height: 30px;
+    margin-top: 200px;
+    margin-left: -400px;
+    animation: jeu 3s infinite;   
+}
